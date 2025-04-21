@@ -9,12 +9,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["node_modules/@types", "./types"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["node", "element-plus/global"] // 确保这里包含 "node"
+    "types": ["node"] // 确保这里包含 "node"
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
